@@ -3,20 +3,11 @@
 <br>
 <hr>
 
-
-<form action="/search" method="get">
-  <input id="q" name="q" type="text" /><br>
-  <input name="commit" type="submit" value="Search" />
-</form>
-
-<br><br>
-<hr>
-<br><br>
-
-<center>
-	<h2>What do you feel like eating?</h2><br>
-	<form action="/home/index" method="get">
-		<input type="text"><br><br>
-		<input type="submit" value="Is It Vegan?">
-	</form>
-</center>
+<div align="center">
+     <h2>You Hungry?</h2>
+     <h2>Why Not Try Some Fucking</h2>
+     <h3>
+     	<a href= <%= @rand_dish.url %> target="blank" ><%= @rand_dish.name %></a>
+     </h3>
+     <%= button_to "I Don't Fucking Like That", root_path, :method => :get %>
+</div>
